@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about us</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/flowup.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+<!--导航栏-->
+<section id="nav_fixed" class="nav_box" ><!--class="nav_box"-->
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="journey.html">辛酸历程</a></li>
+                    <li id="dropdown" class="dropdown">
+                        <a href="#"  class="dropdown-toggle" data-toggle="dropdown">丰功伟绩<span class="caret"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-left ">
+                            <li><a href="a2019.html">不凡2019</a></li>
+                            <li><a href="power.html">厉害了我的国</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="photosShow.html">时光相馆</a></li>
+                    <li><a href="discussion.html">爱国论坛</a></li>
+                    <li class="active"><a href="aboutUs.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <div class="container">
+        <div class="row" style="margin-top: 75px;">
+            <div class="col-sm-4 img_box">
+                <img id="dreamer" class="img-responsive" src="../img/dreamer.jpg" alt="dreamer">
+            </div>
+            <div class="col-sm-8">
+                <div class="about_content">
+              		<br />
+                    <div class="row">
+                        <h2 class="gradient-text">关于我们 <br> <small>ABOUT US</small></h2>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-4"><img class="img-responsive" src="../img/1557800474.png" alt="" ></div>
+                        <div class="col-sm-6 about_info">
+                            <p>主题：建国70周年</p>
+                            <p>队名：发际线保卫队</p>
+                            <p>手机：15999756885</p>
+                            <p>邮箱：1824751554@qq.com</p>
+                            <p>地址：东莞理工学院14704宿舍</p></div>
+                    </div>
+                    <br><br />
+                    <h2 class="gradient-text">2019 , 我们都是追梦人</h2>
+                    <h2 class="gradient-text">让我们为祖国的明天加油！！</h2>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer flowup">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>关于我们</h3>
+                    <p>队名：发际线保卫队&nbsp;&nbsp;&nbsp;</p>
+                    <p>队员：李剑波、陈伟坤</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>联系我们</h3>
+                    <p>&nbsp;&nbsp;微信：15999756885</p>
+                    <p>Q Q：1824751554</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="fixed_top"></section>
+</body>
+</html>
+<script>
+    $(function () {
+        var h = $("#dreamer").height();
+        $(".about_content").height(h);
+    });
+</script>

@@ -1,0 +1,113 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.gradient-text{
+    display: block;
+    /*渐变背景*/
+    background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+    #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+    color: transparent; /*文字填充色为透明*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;          /*背景剪裁为文字，只将文字显示为背景*/
+    background-size: 200% 100%;            /*背景图片向水平方向扩大一倍，这样background-position才有移动与变化的空间*/
+    /* 动画 */
+    animation: masked-animation 4s infinite linear;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0; /*background-position 属性设置背景图像的起始位置。*/
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+.slide1{
+    position: relative;
+}
+.slide1 img{
+    width: 100%;
+    height: 100%;
+}
+.slide1 h3{
+    position: absolute;
+    left: 45%;
+    top: 3%;
+    font-size: 40px;
+    color: #F9BA5F;
+}
+
+.slide2{
+    position: relative;
+    background-image: url("../img/pc_bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide2 h3,.slide3 h3,.slide4 h3{
+    margin-top: 20%;
+}
+.slide55 h3{
+    margin-top: 5%;
+}
+.slide2 p,.slide3 p,.slide4 p,.slide55 p{
+    text-align: left;
+}
+.slide3{
+    position: relative;
+    background-image: url("../img/pc_bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide3 img,.slide4 img,.slide5 img{
+    width: 100%;
+}
+.slide4{
+    position: relative;
+    background-image: url("../img/slide1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide5{
+    position: relative;
+    background-image: url("../img/mo_bg2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+}

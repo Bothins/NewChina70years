@@ -1,0 +1,79 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+}
+.about_content{
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.about_content h2{
+    font-family: mizfont2;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about_content img{
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.gradient-text{
+    display: block;
+    /*渐变背景*/
+    background-image: -webkit-linear-gradient(left, #3498db, #f47920 10%, #d71345 20%, #f7acbc 30%,
+    #ffd400 40%, #3498db 50%, #f47920 60%, #d71345 70%, #f7acbc 80%, #ffd400 90%, #3498db);
+    color: transparent; /*文字填充色为透明*/
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;          /*背景剪裁为文字，只将文字显示为背景*/
+    background-size: 200% 100%;            /*背景图片向水平方向扩大一倍，这样background-position才有移动与变化的空间*/
+    /* 动画 */
+    animation: masked-animation 4s infinite linear;
+}
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0; /*background-position 属性设置背景图像的起始位置。*/
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+.about_info{
+    margin-top: 20px;
+}
+.img_box{
+    position: relative;
+    padding: 4px;
+}
+.img_box::before,.img_box::after{
+    content: '';
+    border: 2px solid #2ecc71;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: borderClip 8s linear infinite;
+}
+.img_box::after{
+    animation-delay: -4s;
+}
+.img_box:hover::before,.img_box:hover::after{
+    animation-play-state: paused;
+}
+@-webkit-keyframes borderClip {
+    0%,100%{
+        clip:rect(0px,400px,2px,0px);
+    }
+    25%{
+        clip:rect(0px,2px,581.3px,0px);
+    }
+    50%{
+        clip:rect(579.3px,400px,581.3px,0px);
+    }
+    75%{
+        clip:rect(0px,400px,581.3px,398px);
+    }
+}
+
+

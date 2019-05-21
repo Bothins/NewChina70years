@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>喜迎华诞</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/flowup.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(function () {
+            $("#dropdown").click(function () {
+                $("#dropdown").removeClass("open");
+            });
+        });
+    </script>
+</head>
+<body>
+    <!--大屏展区-->
+	<section class="head_box">
+		<img style="animation-duration: 2s;" class="pic1 animated bounceInRight delay-2s" src="img/70_1.png" />
+		<img style="animation-duration: 2s;" class="pic2 animated bounceInLeft" src="img/70_2.png" />
+        <img style="animation-duration: 2s;" class="pic3 animated zoomIn delay-4s" src="img/70_3.png" />
+        <img class="pic4" src="img/bird.png">
+        <div class="head_box_font">
+            <span class="animated bounceInDown delay-5s">喜迎</span>
+            <span class="animated bounceInDown delay-51s">祖国</span>
+            <span class="animated bounceInDown delay-52s">70周年</span>
+            <span class="animated bounceInDown delay-53s">华诞</span>
+        </div>
+        <div class="head_box_info">
+            <p class="animated bounceInRight delay-6s"><span style="font-weight: bold;">队名：</span>发际线保卫队</p>
+            <p class="animated bounceInRight delay-65s"><span style="font-weight: bold;">组员：</span>李剑波、陈伟坤</p>
+        </div>
+        <div class="down_btn" >
+            <img src="img/down.png">
+        </div>
+	</section>
+    <!--导航栏-->
+    <section id="nav_fixed" ><!--class="nav_box"-->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"></a>
+                </div>
+                <div class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="html/journey.html">辛酸历程</a></li>
+                        <li id="dropdown" class="dropdown">
+                            <a href="#"  class="dropdown-toggle" data-toggle="dropdown">丰功伟绩<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-menu-left ">
+                                <li><a href="html/a2019.html">不凡2019</a></li>
+                                <li><a href="html/power.html">厉害了我的国</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="html/photosShow.html">时光相馆</a></li>
+                        <li><a href="html/discussion.html">爱国论坛</a></li>
+                        <li><a href="html/aboutUs.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" style="background-color: rgba(239,195,209,0.2)">
+            <div class="el-carousel" id="head-carousel">
+                <button type="button" class="el-carousel__arrow el-carousel__arrow--left">
+                    <i class="el-icon-arrow-left" style="font-size: 20px;font-weight: 100;">&lt;</i>
+                </button>
+                <button type="button" class="el-carousel__arrow el-carousel__arrow--right">
+                    <i class="el-icon-arrow-right" style="font-size: 20px;font-weight: 100;">&gt;</i>
+                </button>
+                <div class="el-carousel__container">
+                    <div class="el-carousel__item">
+                        <img src="./img/turn_2.png">
+                    </div>
+                    <div class="el-carousel__item">
+                        <img src="./img/turn_3.png">
+                    </div>
+                    <div class="el-carousel__item">
+                        <img src="./img/turn_4.png">
+                    </div>
+                    <div class="el-carousel__item">
+                        <img src="./img/turn_1.png">
+                    </div>
+                </div>
+                <ul class="num">
+                </ul>
+            </div>
+            <div class="row r1_70">
+                <h3>建国70周年</h3>
+                <div class="border"></div>
+                <p>建国70年，沧海桑田<br />
+                    <span class="bcolor">从1949到2019</span><br />
+                    我们见证了中国从落后到辉煌<br />
+                    从贫穷到富有<br /><br />
+                    <span class="bcolor">70年间</span><br />
+                    祖国变化令你我惊叹<br />
+                    祖国发展令万众感动<br /><br />
+                    今天，就让我们将爱国心吐露<br />
+                    <span class="bcolor">共庆祝建国70年！</span><br />
+                </p>
+            </div>
+            <div class="row r2_70 flowup">
+                <div class="col-sm-12">
+                    <div class="r2_img">
+                        <img src="img/dada.jpg">
+                        <span>习近平主席新年贺词</span>
+                    </div>
+                    <div class="r2_content">
+                        <p> &nbsp;&nbsp;&nbsp;&nbsp;2019年，我们将隆重庆祝中华人民共和国70周年华诞。
+                            70年披荆斩棘，70年风雨兼程。人民是共和国的坚实根基，
+				                            人民是我们执政的最大底气。一路走来，中国人民自力更生、艰苦奋斗，
+				                            创造了举世瞩目的中国奇迹。新征程上，不管乱云飞渡、风吹浪打，
+				                            我们都要紧紧依靠人民，坚持自力更生、艰苦奋斗，以坚如磐石的信心、
+				                            只争朝夕的劲头、坚韧不拔的毅力，一步一个脚印把前无古人的伟大事业推向前进。
+                        </p>
+                        <p style="text-align: right">——摘自习近平主席2019新年贺词</p>
+                    </div>
+                </div>
+            </div>
+            <section class="dialog_box">
+                <h3>论新中国建国后70年间变化</h3>
+                <div class="row r2_70 flowup">
+                    <div class="col-sm-12">
+                        <div class="r2_img">
+                            <img src="img/boy.png">
+                            <span>70年沧桑，回顾那段峥嵘岁月</span>
+                        </div>
+                        <div class="r2_content">
+                            <p> &nbsp;&nbsp;1949年10月1日，开国大典，毛主席在天安门城楼上庄严宣布:"中华人民共和国中央人民政府成立了!"<br />
+                                而今2019年，意味着中国已经建国整整70周年。<br />
+                                70年披荆斩棘，70年风雨兼程。70年来，在党的正确领导下，在中国人民及海内外华人同胞的共同努力下，新中国取得了举世瞩目的成就，
+                                民族独立、国家富强、百姓安居乐业；尤其是党的十八大以来，在以习近平总书记为核心的党中央正确领导下，中华儿女正式踏上了实现民族复兴梦想的伟大征程。<br />
+                                抚今追昔，挖掘峥嵘历史背后那些鲜为人知的往事，既是对历史的回望，也告诫我们要珍惜来之不易的美好生活。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2_70 flowup" style="margin-left: 17%;">
+                    <div class="col-sm-12">
+                        <div class="r2_img float_R">
+                            <img src="img/girl.png" class="float_R">
+                            <span class="float_R">70年里我们在努力</span>
+                        </div>
+                        <br><br><br>
+                        <div class="r2_content">
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;看看我们日新月异的国家，从长安街出发到美丽乡村和边寨，五千年的情怀，日新月异展现漫天的光彩，站起来，富起来，强起来!“打老虎，拍苍蝇”效果显著，“作风建设”在路上，“灯塔”学习进行时，一件件一桩桩，让百姓看到党和政府的决心，而一件件增添百姓福祉，造福百姓的惠民之事，更是实实在在的感动着人民。
+                                <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;“英雄者，国之干也。”我们中国从来不缺乏平凡英雄。正是因为对祖国的热爱，黄大年才会作别康桥的水草，归来做祖国的栋梁；廖俊波才会把人民扛在肩上，作为人民的樵夫上山寻路；卓嘎和央宗姐妹花才会接过老阿爸缝过的五星红旗，日出高原放牧守边。他们也许没有惊天地泣鬼神的惊天伟绩，也没有“身披金甲圣衣，脚踏七彩祥云”那般绚烂夺目，却因为一个略显萧索却顶天立地的背影，一句略显简单但正义凛然的话语，一段略显平常却坚定执着的守候，一次危机关头挺身而出的果敢，而让我们感受到中国人的骨气与傲气，气魄与胸怀。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2_70 flowup">
+                    <div class="col-sm-12">
+                        <div class="r2_img">
+                            <img src="img/boy.png">
+                            <span>70年里我们在改变</span>
+                        </div>
+                        <div class="r2_content">
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;从“一带一路”“亚投行”到西子湖畔的高峰论坛，从量子通信技术研究领域的新突破到磁悬浮列车步入2.0，从“三农政策”到“精准扶贫”，从“蓝天保卫战的打响”到塞罕坝奇迹的诞生，从高端的国际舞台到百姓的油盐酱醋，从宏伟蓝图的绘制到政策红利的落实，从国务院到村委会，中国政府矢志不渝地以务实，创新，包容，开放的姿态，让百姓的生活一天天改善，用实际行动增添了政府公信力。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2_70 flowup" style="margin-left: 17%;">
+                    <div class="col-sm-12">
+                        <div class="r2_img float_R">
+                            <img src="img/girl.png" class="float_R">
+                            <span class="float_R">70年巨变，展望祖国美好明天</span>
+                        </div>
+                        <br><br><br>
+                        <div class="r2_content">
+                            <p>  “把马克思主义的普遍真理同我国的具体实际结合起来，走自己的路，建设有中国特色的社会主义！”
+
+                                “把中国特色社会主义事业不断推向前进，共同创造我们的幸福生活和美好未来！”
+
+                                “为夺取全面建设小康社会新胜利、谱写人民美好生活新篇章而努力奋斗！”
+
+                                七十年，四句话，与“开天辟地”、“春天的故事”、“走进新时代”、“继往开来”以及“工业发展”、“新农村建设”、“民主政治”、“依法治国”、“科技发展”、“和谐家园”等方阵一起，勾勒出这个国家的发展脉络。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row r2_70 flowup">
+                    <div class="col-sm-12">
+                        <div class="r2_img">
+                            <img src="img/boy.png">
+                            <span>70年后我们也将继续前进</span>
+                        </div>
+                        <div class="r2_content">
+                            <p> &nbsp;&nbsp;&nbsp;&nbsp;新时代，新目标。中国从建国至今已度过70年的时光，这70年里我们经历了发展也度过了曲折与磨难。70年绝不是终点，而是我们新的起点。新时代我们也将“与国同梦”，继续为祖国的发展贡献自己的力量。
+
+                                “与国同梦”是坚持，是信仰，是久久不变的情怀。正如习近平所说：“一个流动的中国，充满了繁荣发展的活力。我们都在努力奔跑，我们都是追梦人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row blessing flowup">
+                <p>70年披荆斩棘<br />
+                    70年风雨兼程<br />
+                    <br />
+                    我衷心希望<br />
+                    我热切盼望<br />
+                    我们的祖国能够在习总书记的坚强领导下<br />
+                    以蓬勃之势、以雄健之姿<br />
+                    以礼仪之邦、以富强之态<br />
+                    向全世界人民展示我们中华民族<br />
+                    使我们的国家和民族<br />
+                    站在世界舞台最耀眼的中心<br />
+                    祝祖国70岁生日快乐！<br /><br />
+                </p>
+                <img src="img/640.png">
+            </div>
+        </div>
+    </section>
+    <div class="footer flowup">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>关于我们</h3>
+                    <p>队名：发际线保卫队&nbsp;&nbsp;&nbsp;</p>
+                    <p>队员：李剑波、陈伟坤</p>
+                </div>
+                <div class="col-sm-6">
+                    <h3>联系我们</h3>
+                    <p>&nbsp;&nbsp;微信：15999756885</p>
+                    <p>Q Q：1824751554</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="fixed_top"></section>
+    <script>
+        $(function(){
+            $("body").flowUp(".flowup", { transalteY: 800, duration: 1 });
+        });
+    </script>
+</body>
+</html>

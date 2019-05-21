@@ -1,0 +1,299 @@
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+    text-align: center;
+}
+.swiper-slide {
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+.slide1{
+    color:#FFF;
+    height: 100%;
+    background-image: url("../img/p_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.slide1_box{
+    border-radius: 8px;
+    margin-top: 50px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.2);
+    padding: 30px;
+
+}
+.slide1_box h3{
+    margin-top: 0px;
+    text-align: center;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.wrap{
+    border-radius: 8px;
+    height: 300px;
+    position: relative;
+}
+.front,.back{
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: rgba(81, 81, 81, 0.541176) 0px 0px 3px;
+    transition: all 0.8s;
+}
+.front{
+    transform: perspective(800px) rotateY(0deg);
+}
+.front img{
+    width: 100%;
+}
+.back{
+    height: 100%;
+    padding: 20px;
+    transform: perspective(800px) rotateY(180deg);
+}
+.back h3{
+    margin-top: 0px;
+}
+.wrap:hover .front{
+    transform: perspective(800px) rotateY(-180deg);
+}
+.wrap:hover .back{
+    transform: perspective(800px) rotateY(0deg);
+}
+.slide2{
+    top: 20px;
+    position: relative;
+}
+.slide4{
+    position: relative;
+    top: 30px;
+}
+.q_head{
+    position: absolute;
+    top: 15px;
+    left: -100px;
+    width: 50%;
+}
+.qiao_font{
+    cursor: default;
+    font-family: mizfont2;
+    width: 100px;
+    font-size: 80px;
+    line-height: 90px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+}
+.slide5{
+    position: relative;
+    top: -40px;
+}
+.slide5 .footer{
+    position: absolute;
+    opacity: 1;
+    bottom: -50px;
+}
+
+/*test2 飞框动画*/
+.test2{
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.test2 div div,p{
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.test2 img{
+    opacity: 0.8;
+    transform: scale(1,1);
+    -webkit-transition: all 0.35s ;
+    -moz-transition: all 0.35s ;
+    transition: all 0.35s;
+}
+.test2>div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #FFF;
+    font-family: "微软雅黑";
+}
+.test2 div{
+    width: 100%;
+    height: 100%;
+    padding:100px;
+
+}
+.test2 div p:nth-of-type(1){ transition-delay:0.05s;  }
+.test2 div p:nth-of-type(2){ transition-delay:0.2s;  }
+.test2 div p{
+    background: #FFF;
+    color: #333;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    transform: translate(0px,100px);
+    opacity: 0;
+}
+.test2 div div{
+    border:1px solid #FFF;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+    transform: scale(1.2,1.2);
+}
+.test2:hover div div{
+    transform: scale(1,1);
+    opacity: 1;
+}
+.test2:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+.test2:hover div p{
+    transform: translate(0px,0px) ;
+    opacity: 1;
+}
+
+/*test3  缩放动画*/
+.test3{
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.test3 div div,p{
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+}
+.test3 img{
+    opacity: 0.8;
+    transform: scale(1,1);
+    -webkit-transition: all 0.35s ;
+    -moz-transition: all 0.35s ;
+    transition: all 0.35s;
+}
+.test3>div{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #FFF;
+    font-family: "微软雅黑";
+}
+.test3 div{
+    width: 100%;
+    height: 100%;
+    padding:100px;
+
+}
+.test3 div p:nth-of-type(1){ transition-delay:0.05s;  }
+.test3 div p:nth-of-type(2){ transition-delay:0.2s;  }
+.test3 div p{
+    background: #FFF;
+    color: #333;
+    margin: 5px;
+    text-align: center;
+    border-radius: 4px;
+    transform: translate(0px,100px);
+    opacity: 0;
+}
+.test3 div div{
+    border:1px solid #FFF;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    transform: translate(0px,-600px) rotate(0deg);
+}
+.test3:hover div div{
+    transform: translate(0px,0px) rotate(360deg);
+}
+.test3:hover img{
+    opacity: 0.6;
+    transform: scale(1.2,1.2);
+}
+.test3:hover div p{
+    transform: translate(0px,0px) ;
+    opacity: 1;
+}
+
+/*test4 动态图片*/
+.test4{
+    background: #000;
+    overflow: hidden;
+}
+.test4 img{
+    opacity: 1;
+    transform: scale(1,1);
+    border-radius: 6px;
+    -webkit-transition: all 0.35s ;
+    -moz-transition: all 0.35s ;
+    transition: all 0.35s;
+}
+.test4:hover img{
+    opacity: 0.7;
+    transform: scale(1.2,1.2);
+}
+
+/*test5 显示图片信息*/
+.test5{
+    position: relative;
+    overflow: hidden;
+}
+.test5 div{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    transition: all 0.35s;
+    transform: scale(1,1);
+    opacity: 0;
+    transform:0.8s;
+}
+.test5:hover div{
+    opacity: 0.9;
+    transform: scale(1.2,1.2);
+    transform: translate(0px,0px);
+}
